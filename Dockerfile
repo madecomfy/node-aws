@@ -2,7 +2,7 @@ FROM node:8
 
 LABEL maintainer "tom@madecomfy.com.au"
 
-USER node
+USER root
 
 RUN apt-get update && apt-get install -y --no-install-recommends
 
