@@ -10,4 +10,5 @@ RUN apt-get install -y python-dev python-pip && \
     pip install awscli && \
     aws configure set preview.cloudfront true
 
-RUN npm install -g aglio
+RUN npm -g config set user root && \
+    npm install -g aglio
