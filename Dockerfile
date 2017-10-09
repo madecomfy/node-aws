@@ -12,3 +12,5 @@ RUN apt-get install -y python-dev python-pip && \
 
 RUN npm -g config set user root && \
     npm install -g aglio
+
+RUN npm install --global gulp-cli
