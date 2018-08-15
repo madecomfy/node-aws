@@ -19,5 +19,6 @@ jobs:
           command: |
             if [ "${CIRCLE_BRANCH}" == "master" ]; then
               docker tag 8 madecomfyau/node-aws
+              docker push madecomfyau/node-aws:8
               # docker push madecomfyau/node-aws:latest
             fi
